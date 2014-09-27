@@ -1,0 +1,11 @@
+{
+    "name": "jamesjnadeau/sallyandjames.com",
+    "description": "A site for our wedding",
+    "authors": [
+        {
+            "name": "jamesjnadeau",
+            "email": "james.nadeau@gmail.com"
+        }
+    ],
+    "require": {}
+}
