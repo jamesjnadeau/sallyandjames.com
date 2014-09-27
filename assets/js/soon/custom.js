@@ -43,7 +43,7 @@ COMMING SOON PAGE
             seconds.html('<h1>'+s+'</h1><p>Second'+(s>1?'s':''),'</p>');
             setTimeout(setDate, 1000);
 
-            message.html(' we think it\'s going to happen in...');
+            message.html(' It\'s planned to start in... ');
         }
     }
 })(jQuery);
