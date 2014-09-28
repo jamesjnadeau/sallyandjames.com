@@ -35,7 +35,7 @@ $client->addScope("https://spreadsheets.google.com/feeds");
 $oauth2 = new Google_Service_Oauth2($client);
 
 
-$GLOBALS['token_store'] = "gs://".$_GLOBALS['bucket'].".appspot.com/james.nadeau.token";
+$GLOBALS['token_store'] = "gs://".$_GLOBALS['bucket']."/james.nadeau.token";
 function store_access_token($token)
 {
 	//store this token to the bucket for later use
