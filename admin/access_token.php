@@ -3,7 +3,8 @@ require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 //get clout bucket name
 use google\appengine\api\cloud_storage\CloudStorageTools;
-$_GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
+//$_GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
+$_GLOBALS['bucket'] = 'sallyandjames';
 
 //set up spreadsheet factory
 use Google\Spreadsheet\DefaultServiceRequest;
