@@ -10,9 +10,15 @@ handlers:
   static_dir: assets
   application_readable: true
 
+- url: /
+  script: /index.php
+
+- url: /rsvp
+  script: /rsvp/index.php
+
+#-url: /admin
+#  script: /admin/index.php
+
 # Serve php scripts.
 - url: /(.+\.php)$
   script: \1
-
-- url: /.*
-  script: index.php
