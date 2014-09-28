@@ -3,8 +3,8 @@ require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 //get clout bucket name
 use google\appengine\api\cloud_storage\CloudStorageTools;
-//$_GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
-$_GLOBALS['bucket'] = 'sallyandjames';
+$_GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
+//$_GLOBALS['bucket'] = 'sallyandjames';
 
 //set up spreadsheet factory
 use Google\Spreadsheet\DefaultServiceRequest;
@@ -35,7 +35,7 @@ $client->addScope("https://spreadsheets.google.com/feeds");
 $oauth2 = new Google_Service_Oauth2($client);
 
 
-$GLOBALS['token_store'] = "gs://".$_GLOBALS['bucket']."/james.nadeau.token";
+$GLOBALS['token_store'] = "gs://".$_GLOBALS['bucket'].".appspot.com/james.nadeau.token";
 function store_access_token($token)
 {
 	//store this token to the bucket for later use
