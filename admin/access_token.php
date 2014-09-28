@@ -39,12 +39,7 @@ $GLOBALS['token_store'] = "gs://".$_GLOBALS['bucket'].".appspot.com/james.nadeau
 function store_access_token($token)
 {
 	//store this token to the bucket for later use
-	$options = ['gs' => ['Content-Type' => 'text/plain', 'read_cache_expiry_seconds' => 1800, ]];
-	$ctx = stream_context_create($options);
-	//$token = json_decode($token, true);
-	//$token['create_time'] = time();
-	//$token = json_encode($token);
-	file_put_contents($GLOBALS['token_store'], $token, 0, $ctx);
+	file_put_contents($GLOBALS['token_store'], $token);
 }
 
 function get_access_token(&$client)
