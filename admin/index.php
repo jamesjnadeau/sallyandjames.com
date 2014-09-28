@@ -22,10 +22,7 @@ if (isset($_REQUEST['logout'])) {
 if (isset($_GET['code'])) {
   $client->authenticate($_GET['code']);
   $_SESSION['access_token'] = $client->getAccessToken();
-	//save this token so we can use it later
-	$options = ['gs' => ['Content-Type' => 'text/plain']];
-	$ctx = stream_context_create($options);
-	file_put_contents('gs://my_bucket/hello.txt', 'Hello', 0, $ctx);
+	store_access_token($_SESSION['access_token']);
   $redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
   header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
 }
