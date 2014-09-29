@@ -9,14 +9,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/admin/access_token.php');
 $client->setApprovalPrompt('force');
 
 
-/************************************************
-  Boilerplate auth management - see
-  user-example.php for details.
- ************************************************/
+//Basic auth management
 if (isset($_REQUEST['logout'])) {
   unset($_SESSION['access_token']);
 }
-
 
 
 if (isset($_GET['code'])) {
