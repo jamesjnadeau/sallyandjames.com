@@ -48,7 +48,8 @@ function store_access_token($token)
 	}
 	else
 	{
-		echo "<p> Error writing to ".$GLOBALS['token_store'].'</p>';
+		//echo "<p> Error writing to ".$GLOBALS['token_store'].'</p>';
+		error_log('Can not write to "'.$GLOBALS['token_store'].'" !');
 	}
 }
 
