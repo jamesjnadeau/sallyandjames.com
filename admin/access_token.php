@@ -5,9 +5,9 @@ require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 //ensure this is set up, see "Admin Console" note/link here:
 //https://cloud.google.com/appengine/docs/php/googlestorage/setup
 //nevermind, that doesn't work either, there's no way this works.
-//use google\appengine\api\cloud_storage\CloudStorageTools;
-//$_GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
-$_GLOBALS['bucket'] = 'sallyandjames';
+use google\appengine\api\cloud_storage\CloudStorageTools;
+$GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
+//$GLOBALS['bucket'] = 'sallyandjames';
 
 //set up spreadsheet factory
 use Google\Spreadsheet\DefaultServiceRequest;
@@ -38,10 +38,10 @@ $client->addScope("https://spreadsheets.google.com/feeds");
 $oauth2 = new Google_Service_Oauth2($client);
 
 
-$GLOBALS['token_store'] = "gs://".$_GLOBALS['bucket']."/james.nadeau.token";
+$GLOBALS['token_store'] = "gs://".$GLOBALS['bucket']."/james.nadeau.token";
 function store_access_token($token)
 {
-	if(is_writable("gs://".$_GLOBALS['bucket']))
+	if(is_writable("gs://".$GLOBALS['bucket']))
 	{
 		//store this token to the bucket for later use
 		file_put_contents($GLOBALS['token_store'], $token);
