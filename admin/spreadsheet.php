@@ -1,6 +1,6 @@
 <?php
 
-include('access_token.php');
+include($_SERVER['DOCUMENT_ROOT'].'/admin/access_token.php');
 
 //set up spreadsheet factory
 //from:https://github.com/asimlqt/php-google-spreadsheet-client

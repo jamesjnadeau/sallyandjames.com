@@ -5,7 +5,7 @@ session_start();
 use Google\Spreadsheet\DefaultServiceRequest;
 use Google\Spreadsheet\ServiceRequestFactory;
 
-include('access_token.php');
+include($_SERVER['DOCUMENT_ROOT'].'/admin/access_token.php');
 $client->setApprovalPrompt('force');
 
 
