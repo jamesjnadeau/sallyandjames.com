@@ -46,7 +46,7 @@ function store_access_token($token)
 	error_log("Saving key in ".$GLOBALS['token_store']);
 	error_log('Key: '.$token);
 	file_put_contents($GLOBALS['token_store'], $token);
-	file_put_contents"gs://".$GLOBALS['bucket']."/hello_world.txt";
+	file_put_contents( "gs://".$GLOBALS['bucket']."/hello_world.txt");
 	/*
 	if(is_writable($GLOBALS['token_store']))
 	{
