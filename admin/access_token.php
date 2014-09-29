@@ -5,9 +5,9 @@ require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 //ensure this is set up, see "Admin Console" note/link here:
 //https://cloud.google.com/appengine/docs/php/googlestorage/setup
 //nevermind, that doesn't work either, there's no way this works.
-use google\appengine\api\cloud_storage\CloudStorageTools;
-$GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
-//$GLOBALS['bucket'] = 'sallyandjames';
+//use google\appengine\api\cloud_storage\CloudStorageTools;
+//$GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
+$GLOBALS['bucket'] = 'sallyandjames';
 
 //set up spreadsheet factory
 use Google\Spreadsheet\DefaultServiceRequest;
