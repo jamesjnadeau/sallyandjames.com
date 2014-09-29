@@ -7,8 +7,8 @@ require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 //nevermind, that doesn't work either, there's no way this works.
 use google\appengine\api\cloud_storage\CloudStorageTools;
 $GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
-if($GLOBALS['bucket'] == '')
-	$GLOBALS['bucket'] = 'rpl_cfg_78c4d3bee60d18b4';
+//if($GLOBALS['bucket'] == '')
+//	$GLOBALS['bucket'] = 'rpl_cfg_78c4d3bee60d18b4';
 	//$GLOBALS['bucket'] = 'sallyandjames';
 
 //set up spreadsheet factory
@@ -40,12 +40,13 @@ $client->addScope("https://spreadsheets.google.com/feeds");
 $oauth2 = new Google_Service_Oauth2($client);
 
 
-$GLOBALS['token_store'] = "gs://".$GLOBALS['bucket']."/james.nadeau.token";
+$GLOBALS['token_store'] = "gs://".$GLOBALS['bucket']."/james.nadeau.txt";
 function store_access_token($token)
 {
 	error_log("Saving key in ".$GLOBALS['token_store']);
 	error_log('Key: '.$token);
 	file_put_contents($GLOBALS['token_store'], $token);
+	file_put_contents"gs://".$GLOBALS['bucket']."/hello_world.txt";
 	/*
 	if(is_writable($GLOBALS['token_store']))
 	{
