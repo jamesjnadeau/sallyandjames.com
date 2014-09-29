@@ -79,8 +79,10 @@ if (
       		//we are logged in!
       		echo "<h3>We are logged in <a href='?logout=true' style='float: right' >logout</a></h3>";
 			echo '<p>'.$GLOBALS['bucket'].'</p>';
+			echo '<h3>session</h3>';
 			echo '<pre>'.print_r($token_decoded, true).'</pre>';
-			//echo '<pre>'.print_r(json_decode(get_access_token($token), true), true).'</pre>';
+			echo '<h3>get_access_token</h3>';
+			echo '<pre>'.print_r(json_decode(get_access_token($client), true), true).'</pre>';
 			
 			echo '<pre>'.print_r($user, true).'</pre>';
 			echo '<pre>';

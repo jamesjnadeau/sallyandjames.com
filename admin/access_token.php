@@ -43,6 +43,10 @@ $oauth2 = new Google_Service_Oauth2($client);
 $GLOBALS['token_store'] = "gs://".$GLOBALS['bucket']."/james.nadeau.token";
 function store_access_token($token)
 {
+	error_log("Saving key in ".$GLOBALS['token_store']);
+	error_log('Key: '.$token);
+	file_put_contents($GLOBALS['token_store'], $token);
+	/*
 	if(is_writable($GLOBALS['token_store']))
 	{
 		//store this token to the bucket for later use
@@ -55,6 +59,7 @@ function store_access_token($token)
 		//fuck it, try anyway
 		file_put_contents($GLOBALS['token_store'], $token);
 	}
+	*/
 }
 
 function get_access_token(&$client)
