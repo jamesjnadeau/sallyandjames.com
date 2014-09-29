@@ -2,9 +2,11 @@
 require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 //get clout bucket name
+//ensure this is set up, see "Admin Console" note/link here:
+//https://cloud.google.com/appengine/docs/php/googlestorage/setup
 use google\appengine\api\cloud_storage\CloudStorageTools;
 $_GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
-$_GLOBALS['bucket'] = 'sallyandjames';
+//$_GLOBALS['bucket'] = 'sallyandjames';
 
 //set up spreadsheet factory
 use Google\Spreadsheet\DefaultServiceRequest;
