@@ -41,7 +41,7 @@ $oauth2 = new Google_Service_Oauth2($client);
 $GLOBALS['token_store'] = "gs://".$_GLOBALS['bucket']."/james.nadeau.token";
 function store_access_token($token)
 {
-	if(is_writable($my_bucket)
+	if(is_writable("gs://".$_GLOBALS['bucket']))
 	{
 		//store this token to the bucket for later use
 		file_put_contents($GLOBALS['token_store'], $token);
