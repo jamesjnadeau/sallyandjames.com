@@ -4,9 +4,10 @@ require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 //get clout bucket name
 //ensure this is set up, see "Admin Console" note/link here:
 //https://cloud.google.com/appengine/docs/php/googlestorage/setup
-use google\appengine\api\cloud_storage\CloudStorageTools;
-$_GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
-//$_GLOBALS['bucket'] = 'sallyandjames';
+//nevermind, that doesn't work either, there's no way this works.
+//use google\appengine\api\cloud_storage\CloudStorageTools;
+//$_GLOBALS['bucket'] = CloudStorageTools::getDefaultGoogleStorageBucketName();
+$_GLOBALS['bucket'] = 'sallyandjames';
 
 //set up spreadsheet factory
 use Google\Spreadsheet\DefaultServiceRequest;
@@ -40,8 +41,15 @@ $oauth2 = new Google_Service_Oauth2($client);
 $GLOBALS['token_store'] = "gs://".$_GLOBALS['bucket']."/james.nadeau.token";
 function store_access_token($token)
 {
-	//store this token to the bucket for later use
-	file_put_contents($GLOBALS['token_store'], $token);
+	if(is_writable($my_bucket)
+	{
+		//store this token to the bucket for later use
+		file_put_contents($GLOBALS['token_store'], $token);
+	}
+	else
+	{
+		echo "<p> Error writing to ".$GLOBALS['token_store'].'</p>';
+	}
 }
 
 function get_access_token(&$client)
