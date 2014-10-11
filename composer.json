@@ -8,7 +8,9 @@
         }
     ],
     "require": {
+		"rmccue/requests": ">=1.0",
 		"google/apiclient": "1.0.*@beta",
-		"asimlqt/php-google-spreadsheet-client": "2.2.*"
+		"asimlqt/php-google-spreadsheet-client": "2.2.*",
+        "mailgun/mailgun-php": "~1.7.1"
 	}
 }

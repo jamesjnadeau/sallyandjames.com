@@ -31,7 +31,7 @@
 
     <!-- START HEADER -->
     <section id="header">
-        <div class="container" style="background: rgba(128, 128, 128, 0.4);">
+        <div class="container" style="background: rgba(138, 73, 107, 0.4);">
             <header>
                 <!-- HEADLINE -->
                 <h1 data-animated="GoIn" ><b>Yay!</b> We are getting married!</h1>
