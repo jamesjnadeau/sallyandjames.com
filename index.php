@@ -62,11 +62,22 @@
         <div id="slider" class="rev_slider">
             <ul>
               <?php 
-				$files = array_reverse(glob($_SERVER['DOCUMENT_ROOT'].'/assets/img/slider/*.{jpg,JPG}', GLOB_BRACE));
+				
+				//$files = array_reverse(glob($_SERVER['DOCUMENT_ROOT'].'/assets/img/slider/*.{jpg,JPG}', GLOB_BRACE));
+				if ($handle = opendir($_SERVER['DOCUMENT_ROOT'].'/assets/img/slider/')) {
+					$index = 0;
+					while (false !== ($entry = readdir($handle))) {
+						if ($entry != "." && $entry != "..") {
+							$files[] = $entry;
+						}
+					}
+					closedir($handle);
+				}
+				$files = array_reverse($files);
 				foreach($files as $index => $file) {
-					$filename = array_pop(explode('/', $file));
-					echo '<li id="slide_'.($index+1).'" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/'.urlencode($filename).'">';
-						echo '<img src="assets/img/slider/'.urlencode($filename).'">';
+					//$filename = array_pop(explode('/', $file));
+					echo '<li id="slide_'.($index+1).'" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/'.urlencode($file).'">';
+						echo '<img src="assets/img/slider/'.urlencode($file).'">';
 					echo '</li>';
 				}
 			?>
