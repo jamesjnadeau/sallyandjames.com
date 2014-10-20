@@ -45,18 +45,15 @@
                 <div id="seconds" class="timer_box"></div>
             </div>
             <!-- END TIMER -->
-            <!--
             <div class="col-lg-4 col-lg-offset-4 mt centered">
-            	<h4>LET ME KNOW WHEN YOU LAUNCH</h4>
-				<form class="form-inline" role="form">
-				  <div class="form-group">
-				    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-				    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-				  </div>
-				  <button type="submit" class="btn btn-info">Submit</button>
-				</form>            
+				<h4>
+					6pm June 20th 2015 
+					<br/>@
+				</h4>
+				<p><a class="btn btn-default" target="_blank" href="http://www.echovermont.org/" >Echo Lake Aquarium</a></p>
+				<p><a class="btn btn-primary" target="_blank" href="https://maps.google.com?daddr=One+College+Street+Burlington,+VT+05401" >Get Directions</a></p>
+				<p><a class="btn btn-info" href="javascript:void(0)" onclick="alert('Ask for the Norton/Nadeau Wedding Rates'); window.open('http://www.marriott.com/hotels/travel/btvdt-courtyard-burlington-harbor/');">Lodging</a></p>
 			</div>
-            -->
         </div>
         <!-- LAYER OVER THE SLIDER TO MAKE THE WHITE TEXTE READABLE -->
         <div id="layer"></div>
@@ -64,19 +61,15 @@
         <!-- START SLIDER -->
         <div id="slider" class="rev_slider">
             <ul>
-              
-              <li id="slide_1" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0184.JPG">
-                <img src="assets/img/slider/IMGP0184.JPG">
-              </li>
-              <li id="slide_2" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0142.JPG">
-                <img src="assets/img/slider/IMGP0142.JPG">
-              </li>
-              <li id="slide_3" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0215.JPG" >
-                <img src="assets/img/slider/IMGP0215.JPG">
-              </li>
-              <li id="slide_4" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0288.JPG">
-                <img src="assets/img/slider/IMGP0288.JPG">
-              </li>
+              <?php 
+				$files = array_reverse(glob($_SERVER['DOCUMENT_ROOT'].'/assets/img/slider/*.{jpg,JPG}', GLOB_BRACE));
+				foreach($files as $index => $file) {
+					$filename = array_pop(explode('/', $file));
+					echo '<li id="slide_'.($index+1).'" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/'.urlencode($filename).'">';
+						echo '<img src="assets/img/slider/'.urlencode($filename).'">';
+					echo '</li>';
+				}
+			?>
             </ul>
         </div>
         <!-- END SLIDER -->
