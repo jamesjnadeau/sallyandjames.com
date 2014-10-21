@@ -82,12 +82,31 @@
 				foreach($files as $index => $file) {
 					$filename = array_pop(explode('/', $file));
 					echo '<li id="slide_'.($index+1).'" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/'.urlencode($filename).'">';
-						echo '<img src="assets/img/slider/'.urlencode($filename).'">';
-					echo '</li>';
-				}*/
-			?>
-				<li id="slide_1" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014115.JPG"><img src="assets/img/slider/SallyandJamesOctober2014115.JPG"></li><li id="slide_2" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014110.JPG"><img src="assets/img/slider/SallyandJamesOctober2014110.JPG"></li><li id="slide_3" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014073.JPG"><img src="assets/img/slider/SallyandJamesOctober2014073.JPG"></li><li id="slide_4" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014062.JPG"><img src="assets/img/slider/SallyandJamesOctober2014062.JPG"></li><li id="slide_5" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014059.JPG"><img src="assets/img/slider/SallyandJamesOctober2014059.JPG"></li><li id="slide_6" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014055.JPG"><img src="assets/img/slider/SallyandJamesOctober2014055.JPG"></li><li id="slide_7" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014054.JPG"><img src="assets/img/slider/SallyandJamesOctober2014054.JPG"></li><li id="slide_8" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014042.JPG"><img src="assets/img/slider/SallyandJamesOctober2014042.JPG"></li><li id="slide_9" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014038.JPG"><img src="assets/img/slider/SallyandJamesOctober2014038.JPG"></li><li id="slide_10" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014024.JPG"><img src="assets/img/slider/SallyandJamesOctober2014024.JPG"></li><li id="slide_11" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014021.JPG"><img src="assets/img/slider/SallyandJamesOctober2014021.JPG"></li><li id="slide_12" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0288.JPG"><img src="assets/img/slider/IMGP0288.JPG"></li><li id="slide_13" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0215.JPG"><img src="assets/img/slider/IMGP0215.JPG"></li><li id="slide_14" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0184.JPG"><img src="assets/img/slider/IMGP0184.JPG"></li><li id="slide_15" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0142.JPG"><img src="assets/img/slider/IMGP0142.JPG"></li><li id="slide_16" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014009_edited-1.jpg"><img src="assets/img/slider/SallyandJamesOctober2014009_edited-1.jpg"></li><li id="slide_17" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014007bw.jpg"><img src="assets/img/slider/SallyandJamesOctober2014007bw.jpg"></li>
-            </ul>
+						echo '<img src="assets/img/loading.gif" data-lazyload="assets/img/slider/'.urlencode($filename).'">';
+					echo '</li>
+';
+				}
+				*/
+			
+				?>
+				<li id="slide_1" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014115.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014115.JPG"></li>
+				<li id="slide_2" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014110.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014110.JPG"></li>
+				<li id="slide_3" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014073.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014073.JPG"></li>
+				<li id="slide_4" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014062.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014062.JPG"></li>
+				<li id="slide_5" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014059.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014059.JPG"></li>
+				<li id="slide_6" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014055.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014055.JPG"></li>
+				<li id="slide_7" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014054.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014054.JPG"></li>
+				<li id="slide_8" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014042.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014042.JPG"></li>
+				<li id="slide_9" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014038.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014038.JPG"></li>
+				<li id="slide_10" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014024.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014024.JPG"></li>
+				<li id="slide_11" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014021.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014021.JPG"></li>
+				<li id="slide_12" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0288.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/IMGP0288.JPG"></li>
+				<li id="slide_13" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0215.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/IMGP0215.JPG"></li>
+				<li id="slide_14" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0184.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/IMGP0184.JPG"></li>
+				<li id="slide_15" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/IMGP0142.JPG"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/IMGP0142.JPG"></li>
+				<li id="slide_16" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014009_edited-1.jpg"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014009_edited-1.jpg"></li>
+				<li id="slide_17" data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/SallyandJamesOctober2014007bw.jpg"><img src="assets/img/loading.gif" data-lazyload="assets/img/slider/SallyandJamesOctober2014007bw.jpg"></li>
+			</ul>
         </div>
         <!-- END SLIDER -->
     </section>
@@ -102,7 +121,16 @@
     <script src="/assets/js/soon/plugins.js"></script>
     <script src="/assets/js/soon/jquery.themepunch.revolution.min.js"></script>
     <script src="/assets/js/soon/custom.js"></script>
-    
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-55955906-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
   </body>
   <!-- END BODY -->
 </html>
