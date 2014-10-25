@@ -9,9 +9,10 @@ $domain = "sallyandjames.com";
 $html = file_get_contents('savethedate.html');
 # Make the call to the client.
 $result = $mgClient->sendMessage($domain, array(
-    'from'    => 'no-reply@sallyandjames.com',
+    'from'    => 'savethedate@sallyandjames.com',
     'to'      => 'testers@sallyandjames.com',
-    'subject' => 'Save the date test',
-    'html'    => $html
+    'subject' => 'Sally and James are Getting Married',
+    'html'    => $html,
+	'o:campaign' => 'dbfce'
 ));
 print_r($result);
