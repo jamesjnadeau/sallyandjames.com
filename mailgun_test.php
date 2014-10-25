@@ -13,6 +13,9 @@ $result = $mgClient->sendMessage($domain, array(
     'to'      => 'testers@sallyandjames.com',
     'subject' => 'Sally and James are Getting Married',
     'html'    => $html,
-	'o:campaign' => 'dbfce'
+	//test
+	//'o:campaign' => 'dbfce'
+	//save the date
+	'o:campaign' => 'ddyy8'
 ));
 print_r($result);
