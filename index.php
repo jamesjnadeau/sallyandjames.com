@@ -52,7 +52,7 @@
 				</h4>
 				<p><a class="btn btn-default" target="_blank" href="http://www.echovermont.org/" >Echo Lake Aquarium</a></p>
 				<p><a class="btn btn-primary" target="_blank" href="https://maps.google.com?daddr=One+College+Street+Burlington,+VT+05401" >Get Directions</a></p>
-				<p><a class="btn btn-info" href="javascript:void(0)" onclick="alert('Ask for the Norton/Nadeau Wedding Rates'); window.open('http://www.marriott.com/hotels/travel/btvdt-courtyard-burlington-harbor/');">Lodging</a></p>
+				<p><a class="btn btn-info" href="javascript:void(0)" onclick="alert('Ask for the Norton/Nadeau Wedding Rates if calling'); window.open('http://cwp.marriott.com/btvdt/nortonnadeauwedding/');">Lodging</a></p>
 			</div>
         </div>
         <!-- LAYER OVER THE SLIDER TO MAKE THE WHITE TEXTE READABLE -->

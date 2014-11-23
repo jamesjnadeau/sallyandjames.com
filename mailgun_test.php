@@ -10,7 +10,11 @@ $html = file_get_contents('savethedate.html');
 # Make the call to the client.
 $result = $mgClient->sendMessage($domain, array(
     'from'    => 'savethedate@sallyandjames.com',
-    'to'      => 'testers@sallyandjames.com',
+    //'to'      => 'date@sallyandjames.com',
+    //'to'      => 'abroderick8@gmail.com',
+    //'to'      => 'michael.haseck@gmail.com',
+    'to'      => 'ava@sover.net',
+    
     'subject' => 'Sally and James are Getting Married',
     'html'    => $html,
 	//test
