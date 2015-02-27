@@ -106,7 +106,7 @@ if (
 			
 			echo '<p>Loadded '.count($rows).' rows</p>';
 			
-			/*
+			
 			$csv_storage = "gs://".$_GLOBALS['bucket'].".appspot.com/guest_list.csv";
 			
 			
@@ -130,7 +130,6 @@ if (
 				}
 				fclose($handle);
 			}
-			*/
       	}
 	?>
   </div>

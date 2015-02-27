@@ -1,6 +1,6 @@
 application: sallyandjames
-version: 3
-runtime: php
+version: 4
+runtime: php55
 api_version: 1
 threadsafe: true
 
@@ -17,8 +17,8 @@ handlers:
   script: /rsvp/index.php
 
 
-#- url: /admin
-#  script: /admin/index.php
+- url: /admin
+  script: /admin/index.php
 
 # Serve php scripts.
 - url: /(.+\.php)$
