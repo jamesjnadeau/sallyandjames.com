@@ -1,6 +1,6 @@
 application: sallyandjames
 version: 4
-runtime: php55
+runtime: php
 api_version: 1
 threadsafe: true
 
