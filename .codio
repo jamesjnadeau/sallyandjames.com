@@ -3,8 +3,9 @@
 
 // Run button configuration
   "commands": {
-	  "Install app engine": "parts install googleappengine php5 php5-apache2 php5-bcmath",
-        "Start app engine": "dev_appserver.py ./ --php_executable_path /home/codio/.parts/bin/php-cgi --host 0.0.0.0 --admin_host 0.0.0.0"
+	  "Deploy to App Engine": "appcfg.py --oauth2 --noauth_local_webserver --allow_any_runtime -A awesome-highway-716 update ./",
+	  "Install App Engine": "parts install googleappengine php5 php5-apache2 php5-bcmath",
+        "Start App Engine": "dev_appserver.py ./ --php_executable_path /home/codio/.parts/bin/php-cgi --host 0.0.0.0 --admin_host 0.0.0.0"
   },
 
 // Preview button configuration
