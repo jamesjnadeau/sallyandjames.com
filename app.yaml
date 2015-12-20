@@ -13,6 +13,9 @@ handlers:
 - url: /
   script: /index.php
 
+- url: /photos
+  script: /photos.php
+
 - url: /rsvp
   script: /rsvp/index.php
 

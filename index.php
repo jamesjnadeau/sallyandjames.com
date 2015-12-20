@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="A website dedicated to Sally and James Nadeau.">
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
@@ -34,12 +34,13 @@
         <div class="container" style="background: rgba(138, 73, 107, 0.4);">
             <header>
                 <!-- HEADLINE -->
-                <h1 data-animated="GoIn" ><b>Yay!</b> We are getting married!</h1>
+                <h1 data-animated="GoIn" ><b>Woohoo!</b> We are married!</h1>
             </header>
             <!-- START TIMER -->
             <div id="timer" data-animated="FadeIn">
                 <p id="message"></p>
-                <div id="days" class="timer_box"></div>
+                <div id="years" class="timer_box"></div>
+				<div id="days" class="timer_box"></div>
                 <div id="hours" class="timer_box"></div>
                 <div id="minutes" class="timer_box"></div>
                 <div id="seconds" class="timer_box"></div>

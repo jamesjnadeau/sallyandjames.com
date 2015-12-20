@@ -11,7 +11,8 @@ COMMING SOON PAGE
     * The script
     **/
     var message = $('#message');
-    var days = $('#days');
+    var years = $('#years');
+	var days = $('#days');
     var hours = $('#hours');
     var minutes = $('#minutes');
     var seconds = $('#seconds');
@@ -19,16 +20,21 @@ COMMING SOON PAGE
     setDate();
     function setDate(){
         var now = new Date();
-        if( launch < now ){
+        if( launch > now ){
             days.html('<h1>0</H1><p>Day</p>');
             hours.html('<h1>0</h1><p>Hour</p>');
             minutes.html('<h1>0</h1><p>Minute</p>');
             seconds.html('<h1>0</h1><p>Second</p>');
             message.html('We got married!');
         }
-        else{
-            var s = -now.getTimezoneOffset()*60 + (launch.getTime() - now.getTime())/1000;
-            var d = Math.floor(s/86400);
+        else {
+            var s = now.getTimezoneOffset()*60 + (now.getTime() - launch.getTime())/1000;
+            
+			var y = Math.floor(s/31536000);
+            years.html('<h1>'+y+'</h1><p>Year'+(y>1?'s':''),'</p>');
+            s -= y*31536000;
+			
+			var d = Math.floor(s/86400);
             days.html('<h1>'+d+'</h1><p>Day'+(d>1?'s':''),'</p>');
             s -= d*86400;
 
@@ -43,7 +49,7 @@ COMMING SOON PAGE
             seconds.html('<h1>'+s+'</h1><p>Second'+(s>1?'s':''),'</p>');
             setTimeout(setDate, 1000);
 
-            message.html(' It\'s planned to start in... ');
+            message.html(' We&apos;ve been married for ');
         }
     }
 })(jQuery);
