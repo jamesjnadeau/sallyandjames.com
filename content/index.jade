@@ -1,0 +1,107 @@
+doctype html
+html
+  head
+    head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='description', content='A website dedicated to Sally and James Nadeau.')
+      meta(name='author', content='')
+      link(rel='shortcut icon', href='assets/ico/favicon.png')
+      title Sally And James Are Getting Married!
+      // Bootstrap core CSS
+      // link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
+      link(href='/styles.css', rel='stylesheet')
+      // Custom styles for this template
+      //link(href='/assets/css/soon.css', rel='stylesheet')
+
+      link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic', rel='stylesheet', type='text/css')
+      link(href='http://fonts.googleapis.com/css?family=Raleway:400,300,700', rel='stylesheet', type='text/css')
+    // START BODY
+  body.nomobile
+    // START HEADER
+    section#header
+      .container(style='background: rgba(138, 73, 107, 0.4);')
+        header
+          // HEADLINE
+          h1(data-animated='GoIn')
+            b Woohoo!
+            |  We are married!
+        // START TIMER
+        #timer(data-animated='FadeIn')
+          p#message
+          #years.timer_box
+          #days.timer_box
+          #hours.timer_box
+          #minutes.timer_box
+          #seconds.timer_box
+        // END TIMER
+        .col-lg-4.col-lg-offset-4.mt.centered
+          h4
+            | 6pm June 20th 2015
+            br
+            | @
+          p
+            a.btn.btn-default(target='_blank', href='http://www.echovermont.org/') Echo Lake Aquarium
+          p
+            a.btn.btn-primary(target='_blank', href='https://maps.google.com?daddr=One+College+Street+Burlington,+VT+05401') Get Directions
+          p
+            a.btn.btn-info(href='javascript:void(0)', onclick="alert('Ask for the Norton/Nadeau Wedding Rates if calling'); window.open('http://cwp.marriott.com/btvdt/nortonnadeauwedding/');") Lodging
+          h3(style='color: white; margin-bottom: 10px; text-transform: none;') Registries
+          p
+            a.btn.btn-success(href='http://www.amazon.com/registry/wedding/3CIPWX8XEBZ03') Amazon
+          p
+            a.btn.btn-success(href=' https://secure.williams-sonoma.com/registry/9t9z9mnslf/registry-list.html') Williams-Sonoma
+      // LAYER OVER THE SLIDER TO MAKE THE WHITE TEXTE READABLE
+      #layer
+      // END LAYER
+      // START SLIDER
+      #slider.rev_slider
+        ul
+          li#slide_1(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014115.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014115.JPG')
+          li#slide_2(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014110.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014110.JPG')
+          li#slide_3(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014073.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014073.JPG')
+          li#slide_4(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014062.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014062.JPG')
+          li#slide_5(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014059.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014059.JPG')
+          li#slide_6(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014055.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014055.JPG')
+          li#slide_7(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014054.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014054.JPG')
+          li#slide_9(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014038.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014038.JPG')
+          li#slide_10(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014024.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014024.JPG')
+          li#slide_11(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014021.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014021.JPG')
+          li#slide_12(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/IMGP0288.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/IMGP0288.JPG')
+          li#slide_13(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/IMGP0215.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/IMGP0215.JPG')
+          li#slide_15(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/IMGP0142.JPG')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/IMGP0142.JPG')
+          li#slide_16(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014009_edited-1.jpg')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014009_edited-1.jpg')
+          li#slide_17(data-transition='slideleft', data-slotamount='1', data-thumb='assets/img/slider/SallyandJamesOctober2014007bw.jpg')
+            img(src='assets/img/loading.gif', data-lazyload='assets/img/slider/SallyandJamesOctober2014007bw.jpg')
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    //- script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+    // -script(type='text/javascript', src='/assets/js/modernizr.custom.js')
+    //- script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+      script(src='/assets/js/soon/plugins.js')
+      script(src='/assets/js/soon/jquery.themepunch.revolution.min.js')
+      script(src='/assets/js/soon/custom.js')
+    script(src='/main.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55955906-1', 'auto');
+      ga('send', 'pageview');

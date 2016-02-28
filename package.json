@@ -1,0 +1,50 @@
+{
+  "name": "jamesjnadeau.com",
+  "version": "0.0.1",
+  "description": "my personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/webpack-dev-server --progress --colors -d --host 0.0.0.0",
+    "watch": "node_modules/.bin/webpack --progress --colors --watch -d",
+    "build": "node_modules/.bin/webpack --progress --colors -p -d",
+    "stage": "dev_appserver.py --host 0.0.0.0 ./",
+    "deploy": "gcloud preview app deploy app.yaml --project awesome-highway-716"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesjnadeau/jamesjnadeau.com.git"
+  },
+  "author": "James Nadeau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesjnadeau/jamesjnadeau.com/issues"
+  },
+  "homepage": "https://github.com/jamesjnadeau/jamesjnadeau.com#readme",
+  "dependencies": {
+    "async": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "copy-webpack-plugin": "^0.3.3",
+    "css-loader": "^0.23.0",
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "eslint-plugin-react": "^4.1.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "filewalker": "^0.1.2",
+    "html-loader": "^0.4.0",
+    "html-webpack-plugin": "^1.7.0",
+    "image-webpack-loader": "^1.6.2",
+    "jade": "^1.11.0",
+    "jquery": "^2.2.1",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "loader-utils": "^0.2.12",
+    "marked": "^0.3.5",
+    "static-site-loader": "0.0.3",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
