@@ -38,7 +38,8 @@ module.exports = {
   entry: {
     'site-generator': 'static-site-loader!./content',
     main: './assets/js/index.js',
-    styles: './assets/css/index.js',
+    landing: './assets/css/landing.js',
+    default: './assets/css/default.js',
   },
 
   output: {
@@ -74,7 +75,7 @@ module.exports = {
       var templatePath = 'templates/default.jade';
 
       //watch the template for changes
-      //this.addDependency(templatePath);
+      this.addDependency(templatePath);
 
       //Compile the template for use later
       //this.template = jade.compileFile(templatePath, { pretty: false });
