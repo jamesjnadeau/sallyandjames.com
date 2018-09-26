@@ -13,7 +13,6 @@ branches:
 before_install:
 - openssl aes-256-cbc -K $encrypted_f1dd292de8da_key -iv $encrypted_f1dd292de8da_iv
   -in gae-client-secret.json.enc -out gae-client-secret.json -d
-- npm install yarn -g
 - yarn install
 install:
 - yarn run build
