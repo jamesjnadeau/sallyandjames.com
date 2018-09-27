@@ -1,3 +1,18 @@
-#container {
-  
+.navbar-inverse {
+  background-color: #347882;
+  border-color: #1e4543;
+  border-radius: 0px;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+  color: #ccc;
+}
+
+.sans-serif, body {
+  font-family: 'Acme', sans-serif;
+}
+
+.cursive {
+  font-family: 'Berkshire Swash', cursive;
 }
